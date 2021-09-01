@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+}
+
+.saidaFormulario{
+   width: fit-content;
+   width: 30vw;
+   height: 458px;
+}
+
+.form-control{
+    margin: 10px 0;
+}

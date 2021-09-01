@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./javascript/livraria.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>SIMPLE PAGE</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- ENTRADA DE DADOS -->
+        <div class="container h-100 d-flex justify-content-center">
+            <div class="jumbotron my-auto">
+                <div class="d-flex flex-column">
+                    <form>
+                        <h1>COMPRAR PRODUTO</h1>
+                        <hr class="my-4">
+                        <label for="livros">Nome do livro:</label>
+                        <input class="form-control" type="text" id="livro"
+                            placeholder="Ex: Book of Sith: Secrets of the Dark Side" required>
+
+                        <label for=" precos">Preço:</label>
+                        <input class="form-control" type="number" id="preco" required>
+
+                        <label for="desconto">Selecione o desconto:</label>
+                        <select id="cliente" class="custom-select custom-select-md mb-3">
+                            <option value="" disabled selected>SELECIONE</option>
+                            <option value="Nenhum" id="nenhum">Nenhum</option>
+                            <option value="Cliente A" id="A">Cliente A</option>
+                            <option value="Cliente B" id="B">Cliente B</option>
+                            <option value="Cliente C" id="C">Cliente C</option>
+                        </select>
+                        <input type="submit" value="Efetuar Pagamento" id="botao" class="btn btn-primary btn-sm">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SÁIDA DE DADOS -->
+    <div class="container h-100 d-flex justify-content-center">
+        <div class=" saidaFormulario">
+            <div id="saidaLivro"></div>
+            <div id="saidaPreco"></div>
+            <div id="saidaDesconto"></div>
+            <div id="saidaTotal"></div>
+        </div>
+    </div>
+</body>
+
+</html>
